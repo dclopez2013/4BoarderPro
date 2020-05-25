@@ -1,0 +1,282 @@
+{
+  "sidebar_title": "Actions", 
+  "terminal_font_color": "#000000", 
+  "show_advanced": true, 
+  "image_dir": "::gooey/default", 
+  "encoding": "utf-8", 
+  "terminal_font_family": null, 
+  "show_stop_warning": true, 
+  "return_to_config": false, 
+  "language_dir": "C:\\Users\\dclop\\PycharmProjects\\DFS510EVN\\venv\\lib\\site-packages\\gooey\\languages", 
+  "layout": "standard", 
+  "manual_start": false, 
+  "use_legacy_titles": true, 
+  "terminal_font_size": null, 
+  "show_sidebar": true, 
+  "show_success_modal": false, 
+  "header_bg_color": "#ffffff", 
+  "num_optional_cols": 2, 
+  "num_required_cols": 2, 
+  "header_image_center": false, 
+  "progress_regex": null, 
+  "disable_progress_bar_animation": false, 
+  "target": "\"C:\\Users\\dclop\\PycharmProjects\\DFS510EVN\\venv\\Scripts\\python.exe\" -u \"C:/Users/dclop/PycharmProjects/BoarderPro/guiMain.py\"", 
+  "widgets": {
+    "Download All Boards": {
+      "command": "allBoards", 
+      "contents": [
+        {
+          "items": [
+            {
+              "cli_type": "optional", 
+              "type": "TextField", 
+              "required": false, 
+              "id": "-board", 
+              "data": {
+                "dest": "board", 
+                "commands": [
+                  "-board"
+                ], 
+                "display_name": "board", 
+                "help": "Enter the exact name of the board you want", 
+                "default": "", 
+                "required": false, 
+                "nargs": "", 
+                "choices": []
+              }, 
+              "options": {
+                "external_validator": {
+                  "cmd": ""
+                }, 
+                "validator": {
+                  "test": "True", 
+                  "message": ""
+                }, 
+                "error_color": "#ea7878"
+              }
+            }, 
+            {
+              "cli_type": "optional", 
+              "type": "DirChooser", 
+              "required": false, 
+              "id": "-file_Dir", 
+              "data": {
+                "dest": "file_Dir", 
+                "commands": [
+                  "-file_Dir"
+                ], 
+                "display_name": "file_Dir", 
+                "help": "Select where to save the files", 
+                "default": "", 
+                "required": false, 
+                "nargs": "", 
+                "choices": []
+              }, 
+              "options": {
+                "external_validator": {
+                  "cmd": ""
+                }, 
+                "validator": {
+                  "test": "True", 
+                  "message": ""
+                }, 
+                "error_color": "#ea7878"
+              }
+            }, 
+            {
+              "cli_type": "optional", 
+              "type": "TextField", 
+              "required": false, 
+              "id": "--report_Name", 
+              "data": {
+                "dest": "report_Name", 
+                "commands": [
+                  "--report_Name"
+                ], 
+                "display_name": "report_Name", 
+                "help": "Set the report name", 
+                "default": "report.csv", 
+                "required": false, 
+                "nargs": "", 
+                "choices": []
+              }, 
+              "options": {
+                "external_validator": {
+                  "cmd": ""
+                }, 
+                "validator": {
+                  "test": "True", 
+                  "message": ""
+                }, 
+                "error_color": "#ea7878"
+              }
+            }
+          ], 
+          "options": {
+            "padding": 10, 
+            "show_border": false, 
+            "columns": 2
+          }, 
+          "name": "Optional Arguments", 
+          "groups": [], 
+          "description": null
+        }
+      ]
+    }, 
+    "Download Single Board": {
+      "command": "oneBoard", 
+      "contents": [
+        {
+          "items": [
+            {
+              "cli_type": "optional", 
+              "type": "TextField", 
+              "required": false, 
+              "id": "-board", 
+              "data": {
+                "dest": "board", 
+                "commands": [
+                  "-board"
+                ], 
+                "display_name": "board", 
+                "help": "Enter the exact name of the board you want", 
+                "default": "", 
+                "required": false, 
+                "nargs": "", 
+                "choices": []
+              }, 
+              "options": {
+                "external_validator": {
+                  "cmd": ""
+                }, 
+                "validator": {
+                  "test": "True", 
+                  "message": ""
+                }, 
+                "error_color": "#ea7878"
+              }
+            }, 
+            {
+              "cli_type": "optional", 
+              "type": "TextField", 
+              "required": false, 
+              "id": "-id", 
+              "data": {
+                "dest": "id", 
+                "commands": [
+                  "-id"
+                ], 
+                "display_name": "id", 
+                "help": "Enter the exact id the thread you want", 
+                "default": "", 
+                "required": false, 
+                "nargs": "", 
+                "choices": []
+              }, 
+              "options": {
+                "external_validator": {
+                  "cmd": ""
+                }, 
+                "validator": {
+                  "test": "True", 
+                  "message": ""
+                }, 
+                "error_color": "#ea7878"
+              }
+            }, 
+            {
+              "cli_type": "optional", 
+              "type": "DirChooser", 
+              "required": false, 
+              "id": "-file_Dir", 
+              "data": {
+                "dest": "file_Dir", 
+                "commands": [
+                  "-file_Dir"
+                ], 
+                "display_name": "file_Dir", 
+                "help": "Select where to save the files", 
+                "default": "", 
+                "required": false, 
+                "nargs": "", 
+                "choices": []
+              }, 
+              "options": {
+                "external_validator": {
+                  "cmd": ""
+                }, 
+                "validator": {
+                  "test": "True", 
+                  "message": ""
+                }, 
+                "error_color": "#ea7878"
+              }
+            }, 
+            {
+              "cli_type": "optional", 
+              "type": "TextField", 
+              "required": false, 
+              "id": "--report_Name", 
+              "data": {
+                "dest": "report_Name", 
+                "commands": [
+                  "--report_Name"
+                ], 
+                "display_name": "report_Name", 
+                "help": "Set the report name", 
+                "default": "report.csv", 
+                "required": false, 
+                "nargs": "", 
+                "choices": []
+              }, 
+              "options": {
+                "external_validator": {
+                  "cmd": ""
+                }, 
+                "validator": {
+                  "test": "True", 
+                  "message": ""
+                }, 
+                "error_color": "#ea7878"
+              }
+            }
+          ], 
+          "options": {
+            "padding": 10, 
+            "show_border": false, 
+            "columns": 2
+          }, 
+          "name": "Optional Arguments", 
+          "groups": [], 
+          "description": null
+        }
+      ]
+    }
+  }, 
+  "footer_bg_color": "#f0f0f0", 
+  "progress_expr": null, 
+  "poll_external_updates": false, 
+  "group_by_type": true, 
+  "body_bg_color": "#f0f0f0", 
+  "monospace_display": false, 
+  "error_color": "#ea7878", 
+  "header_height": 80, 
+  "disable_stop_button": false, 
+  "run_validators": true, 
+  "sidebar_bg_color": "#f2f2f2", 
+  "header_show_subtitle": true, 
+  "program_name": "ADS Scanner", 
+  "terminal_font_weight": null, 
+  "tabbed_groups": false, 
+  "force_stop_is_error": true, 
+  "language": "english", 
+  "program_description": "", 
+  "terminal_panel_color": "#F0F0F0", 
+  "default_size": [
+    610, 
+    530
+  ], 
+  "auto_start": false, 
+  "header_show_title": true, 
+  "navigation": "SIDEBAR"
+}
